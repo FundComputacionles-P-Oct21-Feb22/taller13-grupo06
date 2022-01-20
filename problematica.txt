@@ -1,0 +1,23 @@
+1. Inicio 
+2. funcion principal ()
+3.   k, i[0-n]
+4.   Escribir "Ingrese un número positivo"
+5.   Leer k
+6.   descomponer(k)
+7. fin funcion principal
+
+8. funcion descomponer (k1; i)
+9.   j, int[0-n] <-- 0
+10.  residuo, i[0-n]
+11.  (unidades(4), x(100)[{A-Z}, {a-z}, {BS}] <-- {"unidades", "decenas", "centenas", "unidad de millar"})
+12.  cadena, x(2000)[{A-Z},{a-z}. {BS]}<-- ""
+13.   Mientras k1 > 0 haga 
+14.    residuo <-- k1 MOD 10
+15.    Escribir residuo + " * 10 elevador a la potencia " + j + "\n"
+16.    cadena <--  cadena + residuo + " " + unidades[j] +"\n"
+17.    k1 <-- k1/10
+18.    j <-- j + 1
+19.   Fin mientras
+20.  Escribir "El número " + k + " se descompone en:\n"
+21.  Escribir cadena
+22. Fin funcion descomponer
